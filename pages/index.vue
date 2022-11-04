@@ -1,10 +1,5 @@
 <template>
   <div>
-
-    <!-- <b-container v-if="loading">
-      <b-spinner label="Loading..."></b-spinner>
-    </b-container> -->
-
     <b-container>
 
       <b-row>
@@ -31,7 +26,6 @@
             v-for="item of postsFromPaginate" :key="item.id">
 
             <!-- <router-link class="post-item" :to="{ path: `/posts/${post.id}`, params: { id: post.id } }">
-
             <b-card img-src="https://placekitten.com/300/300" :img-top="isCol" :img-left="!isCol" ref="imgCard"
               img-alt="Card image" class="mb-3">
               <b-card-text>
@@ -39,19 +33,16 @@
               </b-card-text>
               <b-button>Подробнее</b-button>
             </b-card>
-
           </router-link> -->
 
-            <b-card :title="item.title" :img-src="'https://placekitten.com/300/300'" img-alt="Image"
-              :img-top="isCol" :img-left="!isCol" tag="article" class="mb-2 mx-auto">
+            <b-card :title="item.title" :img-src="'https://placekitten.com/300/300'" img-alt="Image" :img-top="isCol"
+              :img-left="!isCol" tag="article" class="mb-2 mx-auto">
               <!-- <b-card-text>{{ item.title }}</b-card-text> -->
-
               <b-button variant="primary" @click="showModal(item);">Подробнее</b-button>
             </b-card>
 
           </b-col>
         </b-card-group>
-
 
         <div>
           <b-modal id="modal1" :title="selectedItem.title">
@@ -59,21 +50,17 @@
           </b-modal>
         </div>
 
-
       </b-row>
 
-
-      <div>
-      </div>
-
     </b-container>
-
   </div>
 </template>
 
 <script>
 export default {
+  
   layouts: 'default',
+
   data: () => ({
     // loading: true,
     currentPage: '1',
@@ -105,11 +92,13 @@ export default {
     //   this.$router.push('/posts/' + post.id)
     // }
   },
+
   async mounted() {
     await this.$store.dispatch('posts/fetchPosts')
     this.loading = false
     // console.log(this.posts)
   },
+
 }
 </script>
 
@@ -129,5 +118,10 @@ a.post-item {
 .card-img-left {
   max-width: 30%;
   object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 </style>
