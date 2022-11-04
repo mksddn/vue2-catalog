@@ -1,5 +1,8 @@
 # vue2-cat1
 
+![preview](https://user-images.githubusercontent.com/22976310/200048985-126821dc-916f-427e-b367-405af02770ae.gif)
+
+
 ## Build Setup
 
 ```bash
