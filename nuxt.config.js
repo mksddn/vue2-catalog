@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'tstest',
+    title: 'vue2-cat1',
     htmlAttrs: {
       lang: 'en'
     },
