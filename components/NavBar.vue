@@ -21,8 +21,9 @@
   </b-navbar>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent ({
 
   data() {
     return {
@@ -42,7 +43,7 @@ export default {
     }
   }
 
-}
+})
 </script>
 
 <style lang="scss" scoped>

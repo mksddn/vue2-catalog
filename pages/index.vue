@@ -56,26 +56,30 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent ({
   
   layouts: 'default',
 
   data: () => ({
     // loading: true,
-    currentPage: '1',
-    perPage: '8',
-    selectedItem: {},
+    currentPage: 1,
+    perPage: 8,
+    selectedItem: {
+      title: String,
+      body: String
+    },
   }),
 
   computed: {
-    isCol() {
+    isCol(): boolean {
       return this.$store.getters['posts/isCol']
     },
-    posts() {
+    posts(): [] {
       return this.$store.getters['posts/posts']
     },
-    postsFromPaginate() {
+    postsFromPaginate(): any {
       return this.posts.slice(
         (this.currentPage - 1) * this.perPage,
         this.currentPage * this.perPage,
@@ -84,7 +88,7 @@ export default {
   },
 
   methods: {
-    showModal(item) {
+    showModal(item: any) {
       this.selectedItem = item;
       this.$root.$emit("bv::show::modal", "modal1");
     },
@@ -95,11 +99,11 @@ export default {
 
   async mounted() {
     await this.$store.dispatch('posts/fetchPosts')
-    this.loading = false
+    // this.loading = false
     // console.log(this.posts)
   },
 
-}
+})
 </script>
 
 <style lang="scss" scoped>
