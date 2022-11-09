@@ -1,8 +1,6 @@
-## Развернутый проект [здесь](https://mrmadu.github.io/vue2-catalog/)
+# Одностраничный каталог на VUE 2 с поиском и пагинацией
 
 ![preview](https://user-images.githubusercontent.com/22976310/200048985-126821dc-916f-427e-b367-405af02770ae.gif)
-
-# Одностраничный каталог на VUE 2 с поиском и пагинацией
 
 - Фронтенд фреймворк `Nuxt.js` + `TypeScript`
 - Набор инструментов `BootstrapVue`
@@ -15,7 +13,7 @@
 - Подробная информация об объекте в сплывающем окне
 
 ### [Открыть в GitHub Pages](https://mrmadu.github.io/vue2-catalog/)
-## [Запустить в сэндбоксе](https://codesandbox.io/s/github/mrmadu/vue2-catalog)
+### [Запустить в сэндбоксе](https://codesandbox.io/s/github/mrmadu/vue2-catalog)
 
 ------------------
 
