@@ -52,6 +52,18 @@
 
       </b-row>
 
+      <br>
+
+      <b-row>
+        <b-col md="6" class="m-auto">
+          <div class="overflow-auto">
+            <b-pagination v-model="currentPage" :total-rows="this.posts.length" :per-page="perPage"
+              aria-controls="itemList" align="center">
+            </b-pagination>
+          </div>
+        </b-col>
+      </b-row>
+
     </b-container>
   </div>
 </template>
