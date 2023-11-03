@@ -12,8 +12,8 @@
 - Пагинация без перезагрузи страницы
 - Подробная информация об объекте в сплывающем окне
 
-### [Открыть в GitHub Pages](https://mrmadu.github.io/vue2-catalog/)
-### [Запустить в сэндбоксе](https://codesandbox.io/s/github/mrmadu/vue2-catalog)
+### [Открыть в GitHub Pages](https://mksddn.github.io/vue2-catalog/)
+### [Запустить в сэндбоксе](https://codesandbox.io/s/github/mksddn/vue2-catalog)
 
 ------------------
 
